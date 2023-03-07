@@ -11,7 +11,7 @@ pipeline{
             jdk 'jdk_8'
         }
         steps{
-            mvn 'package'
+           sh 'mvn package'
         }
         }
         stage('postbuild'){
