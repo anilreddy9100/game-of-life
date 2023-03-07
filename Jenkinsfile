@@ -21,5 +21,10 @@ pipeline{
                 junit testResults: '**/surefire-reports/TEST-*.xml'
             }
         }
+        stage('echo'){
+            steps{
+                sh 'echo $path'
+            }
+        }
     }
 }
