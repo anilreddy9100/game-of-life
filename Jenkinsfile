@@ -1,5 +1,6 @@
 pipeline{
     agent { label'node_1' }
+    triggers { corn ('H/15 * * * *') }
     stages{
         stage('vcs'){
         steps{
